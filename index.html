@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L’Évolution de la Culture Urbaine - Scénographie de l’Espace Public</title>
+    <meta name="description" content="Analyse historique, grille d'exposition et scénographie de la culture urbaine : du Bronx à Stalingrad, du pochoir au streetwear de luxe.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Curseur Personnalisé Néon -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-accent">URBAN</span>HISTORY
+            </a>
+            <div class="nav-links">
+                <a href="#timeline">Chronologie</a>
+                <a href="#history">Analyses</a>
+                <a href="#gallery">Exposition</a>
+                <a href="#speech">Allocution</a>
+                <a href="#beatmaker">Boombox</a>
+            </div>
+            <div class="nav-audio-indicator" id="navAudioBtn" title="Activer l'ambiance sonore">
+                <div class="music-wave">
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <span class="audio-status-text">OFF</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <header class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-container">
+            <span class="hero-tagline">Scénographie de l'Espace Public</span>
+            <h1 class="hero-title">L’Évolution de la<br><span class="gradient-text">Culture Urbaine</span></h1>
+            <p class="hero-description">
+                Initialement appréhendée comme un ensemble de micro-cultures marginales, la culture urbaine s'est imposée en un demi-siècle comme la force hégémonique de la création artistique contemporaine. Découvrez sa trajectoire historique, des friches du Bronx aux galeries muséales.
+            </p>
+            <div class="hero-actions">
+                <a href="#timeline" class="btn btn-primary">Explorer la Chronologie</a>
+                <a href="#gallery" class="btn btn-secondary">Grille d'Exposition</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-arrow"></span>
+        </div>
+    </header>
+
+    <!-- Section Chronologie (Timeline) -->
+    <section id="timeline" class="timeline-section">
+        <div class="section-header">
+            <span class="section-tag">Trajectoire</span>
+            <h2 class="section-title">Frise Chronologique</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-progress">
+                <div class="timeline-progress-bar"></div>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <!-- 1970 -->
+                <div class="timeline-item active" data-year="1970-1974">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_roots_1.jpg" alt="Bronx" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">1970 - 1974</span>
+                        <h3>L’Insurrection par les Signes</h3>
+                        <p>Naissance du mouvement hip-hop dans la précarité du sud du Bronx à New York. Fondation de la Zulu Nation en 1974 par Afrika Bambaataa.</p>
+                        <span class="timeline-tag">Bronx, NY</span>
+                    </div>
+                </div>
+                <!-- 1982 -->
+                <div class="timeline-item" data-year="1982">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/analysis_stalingrad.jpg" alt="Stalingrad" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">1982</span>
+                        <h3>Arrivée en France</h3>
+                        <p>Bernard Zekri publie les premières chroniques dans Libération. Le <i>New York City Rap Tour</i> débarque à Paris avec Futura 2000 et Dondi.</p>
+                        <span class="timeline-tag">Paris, FR</span>
+                    </div>
+                </div>
+                <!-- 1984 -->
+                <div class="timeline-item" data-year="1984-1987">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_stalingrad_1.jpg" alt="Stalingrad block party" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">1984 - 1987</span>
+                        <h3>Le Temple de Stalingrad</h3>
+                        <p>Le terrain vague de la Chapelle s'impose comme le berceau du graffiti et du breakdance en Europe. Free jams sauvages de DJ Dee Nasty.</p>
+                        <span class="timeline-tag">Stalingrad, Paris</span>
+                    </div>
+                </div>
+                <!-- 1981-1985 -->
+                <div class="timeline-item" data-year="1981-1985">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_pionniers_1.jpg" alt="Pochoir Blek le Rat" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">1981 - 1985</span>
+                        <h3>L’École du Pochoir</h3>
+                        <p>Blek le Rat peint ses premiers rats à Paris (1981), suivi de Jef Aérosol (1982). Grand rassemblement fondateur des pochoiristes à Bondy (1985).</p>
+                        <span class="timeline-tag">Paris / Lille</span>
+                    </div>
+                </div>
+                <!-- 1990 -->
+                <div class="timeline-item" data-year="1990s">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_glisse_2.jpg" alt="Skateboard" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">Années 1990</span>
+                        <h3>Skate & Streetwear</h3>
+                        <p>Le skateboard s'approprie le mobilier urbain (Bastille, Le Dôme). Supreme est fondé en 1994, lançant la révolution mondiale du streetwear.</p>
+                        <span class="timeline-tag">Street Culture</span>
+                    </div>
+                </div>
+                <!-- 2018-2023 -->
+                <div class="timeline-item" data-year="2018-2023">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_inst_2.jpg" alt="Streetwear de luxe" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">2018 - 2023</span>
+                        <h3>La Consécration du Luxe</h3>
+                        <p>Virgil Abloh (2018) puis Pharrell Williams (2023) sont nommés à la direction artistique de Louis Vuitton. Fusion définitive entre rue et luxe.</p>
+                        <span class="timeline-tag">Haute Couture</span>
+                    </div>
+                </div>
+                <!-- 2021-2026 -->
+                <div class="timeline-item" data-year="2021-2026">
+                    <div class="timeline-card">
+                        <div class="timeline-card-img-wrapper">
+                            <img src="images/gallery_inst_1.jpg" alt="Muséographie" class="timeline-card-img">
+                        </div>
+                        <span class="timeline-date">2021 - 2026</span>
+                        <h3>Muséographie Sauvage</h3>
+                        <p>Exposition <i>Hip-Hop 360</i> à la Philharmonie de Paris. Projets immersifs Spiktri (Aude) et exposition <i>RELIEFS</i> au Cellier de Reims (2026).</p>
+                        <span class="timeline-tag">Musées / Patrimoine</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Analyses Historiques -->
+    <section id="history" class="history-section">
+        <div class="section-header">
+            <span class="section-tag">Analyse Historique</span>
+            <h2 class="section-title">Les Piliers de la Culture Urbaine</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="analysis-grid">
+            <!-- 1. Racines -->
+            <article class="analysis-card reveal">
+                <div class="card-image-wrapper">
+                    <img src="images/analysis_roots.jpg" alt="Graffiti urbain" class="card-img">
+                    <div class="card-badge">Racines</div>
+                </div>
+                <div class="card-content">
+                    <h3>L'Insurrection par les Signes</h3>
+                    <p class="card-text">
+                        Né au début des années 1970 dans le sud du Bronx, le hip-hop émerge de la précarité socio-économique et des rivalités de gangs. Sous l'influence d'Afrika Bambaataa et de la Zulu Nation, l'agressivité de la rue is canalisée vers des joutes artistiques (rap, breakdance, tag).
+                    </p>
+                    <blockquote class="card-quote">
+                        « Une insurrection par les signes »
+                        <cite>— Jean Baudrillard, 1976</cite>
+                    </blockquote>
+                    <p class="card-text-secondary">
+                        Le philosophe Richard Shusterman théorise la nécessité de dépasser la frontière artificielle entre art noble et populaire. La fragilité d'une œuvre exposée aux intempéries et à l'effacement volontaire devient sa plus grande force poétique.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 2. Stalingrad Underground -->
+            <article class="analysis-card reveal">
+                <div class="card-image-wrapper">
+                    <img src="images/analysis_stalingrad.jpg" alt="Métro aérien et rails" class="card-img">
+                    <div class="card-badge">Underground</div>
+                </div>
+                <div class="card-content">
+                    <h3>Le Mythe de Stalingrad</h3>
+                    <p class="card-text">
+                        En 1984, après le reflux médiatique de l'émission H.I.P. H.O.P. sur TF1, le mouvement hip-hop français retourne dans l'underground. Le terrain vague de Stalingrad (la Chapelle), vaste parking désaffecté au pied du métro aérien, devient le berceau mythique du graffiti et de la danse en Europe.
+                    </p>
+                    
+                    <!-- Accordéon Anecdotes -->
+                    <div class="anecdotes-accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>La Connexion Artistique de 1987</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Une archive de 1987 immortalise la présence simultanée sur le terrain de JoeyStarr (futur Suprême NTM), Solo et Rockin' Squat (Assassin), rejoints par l'acteur Vincent Cassel réalisant une performance de beatbox.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>La Naissance d'Aktuel Force</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>S'entraînant sous le nom d'Atomic Force, le groupe légendaire de breakdance adopte le nom d'Aktuel Force lors d'un tournage de clip où la production leur impose des joggings rouges siglés "Actuel" en hommage au célèbre magazine.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span>Les Block Parties de Dee Nasty</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Dès l'été 1986, DJ Dee Nasty y organise des free jams sauvages raccordant ses platines à un groupe électrogène pour un droit d'entrée symbolique de deux francs. Ces rassemblements seront interdits au printemps 1987.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3. Pochoir -->
+            <article class="analysis-card reveal">
+                <div class="card-image-wrapper">
+                    <img src="images/analysis_pochoir.jpg" alt="Pochoir mural urbain" class="card-img">
+                    <div class="card-badge">Pochoir</div>
+                </div>
+                <div class="card-content">
+                    <h3>L'École du Pochoir Français</h3>
+                    <p class="card-text">
+                        En marge du graffiti américain, la France voit naître dès 1981 l'art du pochoir avec Blek le Rat (Xavier Prou). Il y introduit la silhouette du rat comme symbole d'art urbain et de réappropriation de la pierre parisienne.
+                    </p>
+                    <p class="card-text-secondary">
+                        Jean-François Perroy (Jef Aérosol) y ajoute l'influence rock et sa célèbre flèche rouge en 1982. En 1985, le collectif VLP consacre cette école à Bondy avec Miss.Tic, Speedy Graphito et Epsylon Point. Ernest Pignon-Ernest souligne quant à lui la poésie de la dégradation et la fragilité du papier collé.
+                    </p>
+                    <blockquote class="card-quote">
+                        « Un art guerrier, futile, instinctif et sulfureux dont la seule noblesse est de laisser une trace de son existence. »
+                        <cite>— Honet, à propos du tag</cite>
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- 4. Skate & Streetwear -->
+            <article class="analysis-card reveal">
+                <div class="card-image-wrapper">
+                    <img src="images/analysis_skate.jpg" alt="Skateboarder effectuant un grind" class="card-img">
+                    <div class="card-badge">Glisse & Mode</div>
+                </div>
+                <div class="card-content">
+                    <h3>Skate, Streetwear & Luxe</h3>
+                    <p class="card-text">
+                        Des curbs en marbre du Jardin du Luxembourg au parvis du Palais de Tokyo (Le Dôme), la glisse urbaine réinvente l'architecture. Parallèlement, des marques de workwear robustes (Dickies, Carhartt) et les détournements de Dapper Dan à Harlem jettent les bases du streetwear moderne.
+                    </p>
+                    <p class="card-text-secondary">
+                        L'intégration du skateboard dans l'urbanisme à Bordeaux (Léo Valls, Brice Fauquet) et la création de musées dédiés (The Disturb House Museum à Grigny) témoignent de cette sédimentation. Virgil Abloh chez Louis Vuitton (2018) puis Pharrell Williams (2023) consacrent la fusion définitive entre culture de la rue et haute couture.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Tableau interactif Skate / Musique -->
+        <div class="dashboard-table-container reveal">
+            <h3>L'Évolution Parallèle : Skate & Musique</h3>
+            <p class="table-subtitle">Une contre-culture façonnée par les mutations musicales de son époque.</p>
+            <div class="table-responsive">
+                <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>Période</th>
+                            <th>Courant Musical</th>
+                            <th>Groupes de Référence</th>
+                            <th>Philosophie Esthétique</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="highlight-td">Années 1970-1980</td>
+                            <td><span class="tag-music punk">Punk Rock & Hardcore</span></td>
+                            <td>The Ramones, Black Flag, Dead Kennedys</td>
+                            <td>Anti-autoritarisme, quête de liberté brute, énergie agressive.</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight-td">Années 1990</td>
+                            <td><span class="tag-music hiphop">Hip-Hop & Grunge</span></td>
+                            <td>Beastie Boys, Public Enemy, Nirvana, Pearl Jam</td>
+                            <td>Attitude défiante, fusion des codes streetwear, esthétique rebelle décontractée.</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight-td">Années 2000</td>
+                            <td><span class="tag-music indie">Indie & Emo</span></td>
+                            <td>Brand New, Blink-182, Jimmy Eat World</td>
+                            <td>Expression émotionnelle, quête d'authenticité et aliénation de la jeunesse.</td>
+                        </tr>
+                        <tr>
+                            <td class="highlight-td">Années 2010-2020</td>
+                            <td><span class="tag-music electro">Musique Électronique</span></td>
+                            <td>Divers producteurs de musiques électroniques</td>
+                            <td>Rythmes synthétiques énergiques pour sessions nocturnes et clips à haute énergie.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Grille d'Exposition (Galerie) -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <span class="section-tag">Scénographie</span>
+            <h2 class="section-title">Grille d'Exposition Thématique</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <!-- Bouton Télécharger toutes les images -->
+        <div class="gallery-actions" style="margin-bottom: 2rem; display: flex; justify-content: flex-end;">
+            <button id="downloadAllBtn" class="btn btn-secondary" style="display: flex; align-items: center; gap: 8px;">
+                <svg class="icon-svg" viewBox="0 0 24 24" style="fill: var(--accent-neon-pink); width: 18px; height: 18px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                Télécharger toute l'exposition (Images HD)
+            </button>
+        </div>
+
+        <!-- Filtres de Galerie -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">Toutes les sections</button>
+            <button class="filter-btn" data-filter="roots">I. Racines Sociologiques</button>
+            <button class="filter-btn" data-filter="pionniers">II. Temps des Pionniers</button>
+            <button class="filter-btn" data-filter="temple">III. Temple Underground</button>
+            <button class="filter-btn" data-filter="glisse">IV. Glisse Urbaine</button>
+            <button class="filter-btn" data-filter="inst">V. Institutionnalisation</button>
+        </div>
+
+        <!-- Grille de Cartes Muséales -->
+        <div class="gallery-grid">
+            <!-- Carte 1 -->
+            <div class="gallery-item" data-category="roots">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_roots_1.jpg" alt="Ruines et immeubles urbains Bronx" class="museum-img">
+                        <span class="museum-category">I. Racines</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">1970 - 1980</span>
+                            <span class="museum-loc">Bronx, New York</span>
+                        </div>
+                        <h4 class="museum-title">Jeunesse parmi les ruines du Bronx</h4>
+                        <p class="museum-desc">Illustration de l'environnement matériel précaire ayant engendré l'urgence de créer et la substitution de la violence par l'art.</p>
+                        <div class="museum-archive">ID: Collection Camilo José Vergara, Library of Congress</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="gallery-item" data-category="roots">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_roots_2.jpg" alt="Détails vêtements et graffiti de métro" class="museum-img">
+                        <span class="museum-category">I. Racines</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">28 Juin 1975</span>
+                            <span class="museum-loc">New York City</span>
+                        </div>
+                        <h4 class="museum-title">Graffiti de métro & Vêtements de rue</h4>
+                        <p class="museum-desc">Témoignage précoce de l'interaction entre l'identité visuelle du tag de métro et l'apparence corporelle de la jeunesse.</p>
+                        <div class="museum-archive">ID: Archives Photographiques de Getty Images</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="gallery-item" data-category="pionniers">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_pionniers_1.jpg" alt="Blek le rat pochoir" class="museum-img">
+                        <span class="museum-category">II. Pionniers</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Années 1980</span>
+                            <span class="museum-loc">Paris, France</span>
+                        </div>
+                        <h4 class="museum-title">Blek le Rat : Silhouette de rat au pochoir</h4>
+                        <p class="museum-desc">Naissance de l'esthétique figurative au pochoir en France, conçue pour dialoguer harmonieusement avec la pierre de taille haussmannienne.</p>
+                        <div class="museum-archive">ID: Archives Blek le Rat / Wikimedia Commons</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="gallery-item" data-category="pionniers">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_pionniers_2.jpg" alt="Pochoir de passant anonyme" class="museum-img">
+                        <span class="museum-category">II. Pionniers</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Début des années 1980</span>
+                            <span class="museum-loc">Lille, France</span>
+                        </div>
+                        <h4 class="museum-title">Jef Aérosol : Passant anonyme & Flèche rouge</h4>
+                        <p class="museum-desc">Introduction de la figure humaine et de l'influence de la scène rock dans l'espace public français avec la flèche rouge signature.</p>
+                        <div class="museum-archive">ID: Collection Officielle de Jef Aérosol</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="gallery-item" data-category="temple">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_stalingrad_1.jpg" alt="Breakdancers sur le sol" class="museum-img">
+                        <span class="museum-category">III. Stalingrad</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">1985 - 1986</span>
+                            <span class="museum-loc">Stalingrad, Paris</span>
+                        </div>
+                        <h4 class="museum-title">Danseurs de breakdance sur dalle d'usine</h4>
+                        <p class="museum-desc">Représentation de l'auto-organisation, du déblaiement d'une dalle d'usine désaffectée et de la réappropriation physique par la jeunesse.</p>
+                        <div class="museum-archive">ID: Fonds photo Ludo Dehy / Yoshi Omori</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 6 -->
+            <div class="gallery-item" data-category="temple">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_stalingrad_2.jpg" alt="Fresque graffiti monumentale" class="museum-img">
+                        <span class="museum-category">III. Stalingrad</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">1986</span>
+                            <span class="museum-loc">Stalingrad, Paris</span>
+                        </div>
+                        <h4 class="museum-title">La fresque « Criminal Art » par Bando & Mode 2</h4>
+                        <p class="museum-desc">Chef-d'œuvre fondateur du graffiti européen, consacrant Paris comme le centre névralgique de cette discipline sur le continent.</p>
+                        <div class="museum-archive">ID: Archives Henry Chalfant / Spraycan Art</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 7 -->
+            <div class="gallery-item" data-category="glisse">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_glisse_1.jpg" alt="Skateboard descente slalom Trocadero" class="museum-img">
+                        <span class="museum-category">IV. Glisse</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Début des années 1970</span>
+                            <span class="museum-loc">Trocadéro, Paris</span>
+                        </div>
+                        <h4 class="museum-title">Slalom de skate à l'Avenue Gustave-V</h4>
+                        <p class="museum-desc">Témoignage de l'apparition précoce de la glisse urbaine et de la cohabitation des usages du sol face au public parisien.</p>
+                        <div class="museum-archive">ID: Collection Sam Nieswizski / Photo Robert Doisneau</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 8 -->
+            <div class="gallery-item" data-category="glisse">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_glisse_2.jpg" alt="Skateur faisant un trick sur un curb" class="museum-img">
+                        <span class="museum-category">IV. Glisse</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Années 2000</span>
+                            <span class="museum-loc">Luxembourg, Paris</span>
+                        </div>
+                        <h4 class="museum-title">Grind technique au Jardin du Luxembourg</h4>
+                        <p class="museum-desc">Illustration de l'utilisation détournée du mobilier urbain classique par la culture skate après la fermeture des fontaines de la Bastille.</p>
+                        <div class="museum-archive">ID: Collection de photographies de Benjamin Deberdt</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 9 -->
+            <div class="gallery-item" data-category="inst">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_inst_1.jpg" alt="Salle exposition Hip Hop 360 Philharmonie" class="museum-img">
+                        <span class="museum-category">V. Musées</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Décembre 2021</span>
+                            <span class="museum-loc">Philharmonie de Paris</span>
+                        </div>
+                        <h4 class="museum-title">Salle d'introduction de « Hip-Hop 360 »</h4>
+                        <p class="museum-desc">Médiation et muséification d'une culture d'origine sauvage et éphémère à travers une scénographie immersive circulaire.</p>
+                        <div class="museum-archive">ID: Archives Philharmonie de Paris / Marie Thérasse</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 10 -->
+            <div class="gallery-item" data-category="inst">
+                <div class="museum-card">
+                    <div class="museum-card-img-wrapper">
+                        <img src="images/gallery_inst_2.jpg" alt="Street art contemporain mural en Europe" class="museum-img">
+                        <span class="museum-category">V. Musées</span>
+                    </div>
+                    <div class="museum-card-body">
+                        <div class="museum-meta">
+                            <span class="museum-date">Années 2010</span>
+                            <span class="museum-loc">Europe (Paris / Rome)</span>
+                        </div>
+                        <h4 class="museum-title">Muralisme contemporain à ciel ouvert</h4>
+                        <p class="museum-desc">Illustration de la transition finale de l'art de rue vers le statut de musée public à ciel ouvert, intégré au patrimoine urbain.</p>
+                        <div class="museum-archive">ID: Base de données Europeana (Collection Topic Street Art)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Allocution Officielle -->
+    <section id="speech" class="speech-section">
+        <div class="section-header">
+            <span class="section-tag">Protocole</span>
+            <h2 class="section-title">Discours d’Inauguration Officiel</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="speech-container reveal">
+            <!-- Panneau Téléprompteur -->
+            <div class="teleprompter-card">
+                <div class="teleprompter-header">
+                    <div class="tele-status">
+                        <span class="red-dot"></span>
+                        <span class="status-label">PRÊT POUR LECTURE</span>
+                    </div>
+                    <div class="tele-controls">
+                        <button id="telePlay" class="tele-btn play" title="Lancer le défilement">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                        </button>
+                        <button id="telePause" class="tele-btn pause" title="Mettre en pause" disabled>
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        </button>
+                        <button id="teleReset" class="tele-btn reset" title="Réinitialiser">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0 0 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0 1 12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+                        </button>
+                        <div class="speed-control">
+                            <label for="teleSpeed">Vitesse :</label>
+                            <select id="teleSpeed">
+                                <option value="slow">Lente</option>
+                                <option value="normal" selected>Normale</option>
+                                <option value="fast">Rapide</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contenu du Discours avec défilement et surbrillance active -->
+                <div class="teleprompter-viewport" id="teleprompterViewport">
+                    <div class="teleprompter-content" id="teleprompterContent">
+                        <p class="speech-line" data-index="0">Mesdames, Messieurs les élus,</p>
+                        <p class="speech-line" data-index="1">Mesdames, Messieurs les conservateurs et historiens de l’art,</p>
+                        <p class="speech-line" data-index="2">Chers artistes et passionnés.</p>
+                        <p class="speech-line" data-index="3">L’inauguration de cette exposition rétrospective dédiée à l’évolution de la culture urbaine marque une étape significative dans l'histoire de la reconnaissance des expressions populaires contemporaines.</p>
+                        <p class="speech-line" data-index="4">Cet événement offre l’opportunité de mesurer le chemin parcouru par un mouvement artistique qui, né dans la marginalité et la relégation sociale, s'est imposé comme la force esthétique la plus dynamique du XXIe siècle.</p>
+                        <p class="speech-line" data-index="5">Il convient de rappeler que la culture urbaine s’est forgée dans les marges géographiques de la cité, là où l’absence d'infrastructures laissait place à la nécessité de créer pour survivre et exister.</p>
+                        <p class="speech-line" data-index="6">Les photographies de l’époque héroïque du Bronx rappellent comment la jeunesse des ghettos a su substituer à la violence des gangs une émulation artistique sans precedent.</p>
+                        <p class="speech-line" data-index="7">Par le biais du rythme, de la danse et de la peinture, ces communautés ont inventé un langage universel fondé sur les valeurs cardinales de respect mutuel, d’excellence créative et de partage.</p>
+                        <p class="speech-line" data-index="8">En franchissant l'Atlantique au début des années 1980, cette culture a opéré une métamorphose singulière en épousant l'architecture et les spécificités sociales européennes.</p>
+                        <p class="speech-line" data-index="9">L’évocation du mythique terrain vague de Stalingrad ressuscite un espace de création unique, une véritable galerie sauvage où s’entraînaient les pionniers de la danse et du graffiti sous le métro aérien parisien.</p>
+                        <p class="speech-line" data-index="10">De même, l’école du pochoir français a su poser un regard poétique et engagé sur les murs de pierre, offrant aux passants un dialogue visuel direct, affranchi de l'élitisme des galeries traditionnelles.</p>
+                        <p class="speech-line" data-index="11">La grille d'exposition met également en lumière l’influence profonde du skateboard et du streetwear, retraçant une convergence unique entre contre-culture, art graphique et haute couture.</p>
+                        <p class="speech-line" data-index="12">Cette évolution démontre que la rue n’est plus seulement le réceptacle des tendances de la société, mais qu’elle en est devenue le principal moteur de création esthétique et de réflexion sur le vivre-ensemble.</p>
+                        <p class="speech-line" data-index="13">Des remerciements sincères sont adressés aux collectionneurs, aux muséographes et aux artistes qui ont contribué à préserver les traces fragiles de cet art par nature éphémère.</p>
+                        <p class="speech-line" data-index="14">Grâce à cette sédimentation documentaire, l'histoire intime de la rue se transforme aujourd'hui en une histoire partagée par la collectivité.</p>
+                        <p class="speech-line" data-index="15">Le public est désormais invité à s'approprier ce parcours visuel et sonore, conçu comme un voyage mémoriel à travers les décennies.</p>
+                        <p class="speech-line" data-index="16">Puisse cette déambulation stimuler la réflexion, questionner le rapport de chacun à l'espace commun et conforter l'idée que l'art trouve sa plus belle expression lorsqu'il s'adresse à tous.</p>
+                        <p class="speech-line" data-index="17">Une excellente soirée de découverte et de partage est souhaitée à l'ensemble de l'auditoire.</p>
+                    </div>
+                </div>
+
+                <div class="teleprompter-footer">
+                    <span class="instruction-note">Le discours est écrit à la troisième personne du singulier pour garantir une posture muséale objective.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Boombox Interactive (Beatmaker) -->
+    <section id="beatmaker" class="beatmaker-section">
+        <div class="section-header">
+            <span class="section-tag">Audio Lounge</span>
+            <h2 class="section-title">The Retro Boombox</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="beatmaker-container reveal">
+            <!-- Boombox Frame -->
+            <div class="boombox">
+                <div class="boombox-top">
+                    <div class="handle"></div>
+                </div>
+                <div class="boombox-body">
+                    <!-- Speakers -->
+                    <div class="speaker speaker-left">
+                        <div class="speaker-outer">
+                            <div class="speaker-cone" id="coneLeft"></div>
+                        </div>
+                    </div>
+
+                    <!-- Center Panel -->
+                    <div class="center-panel">
+                        <div class="brand">HIP-HOP 360 SYNTH</div>
+                        
+                        <!-- Casette Deck -->
+                        <div class="cassette-deck">
+                            <div class="cassette" id="cassetteTape">
+                                <div class="spindle spindle-left"></div>
+                                <div class="spindle spindle-right"></div>
+                                <div class="tape-view"></div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="boombox-controls">
+                            <button id="bbPlay" class="bb-btn play-btn">PLAY</button>
+                            <button id="bbStop" class="bb-btn stop-btn" disabled>STOP</button>
+                            <button id="bbStyle" class="bb-btn style-btn">STYLE</button>
+                        </div>
+                        
+                        <!-- Screen / Equalizer -->
+                        <div class="lcd-screen">
+                            <div class="lcd-status" id="lcdStatus">CASSETTE LOADED</div>
+                            <div class="eq-bars" id="eqBars">
+                                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Speaker -->
+                    <div class="speaker speaker-right">
+                        <div class="speaker-outer">
+                            <div class="speaker-cone" id="coneRight"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vinyl Crackle and Style Indicator -->
+                <div class="boombox-footer">
+                    <div class="knob-container">
+                        <label>Style : <span id="currentStyleText" class="neon-text">Boom-Bap Old School</span></label>
+                    </div>
+                    <div class="knob-container">
+                        <label>Crackle vinyle : <span class="neon-text">Actif</span></label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notes de Synthèse & Perspectives -->
+            <div class="conclusion-block">
+                <h3>Synthèse & Perspectives Futures</h3>
+                <p>
+                    L'analyse de la trajectoire historique de la culture urbaine révèle une dynamique de réversibilité esthétique constante. Si l'institutionnalisation et l'entrée dans les espaces muséaux classiques ou la haute couture ont pu faire craindre une normalisation du message subversif d'origine, la rue conserve sa fonction d'espace de création sauvage et d'expérimentation politique.
+                </p>
+                <p>
+                    L'avenir de cette culture semble s'orienter vers une intégration de plus en plus étroite avec les politiques publiques d'aménagement de la cité. Le développement du « skate urbanisme » ou la commande de fresques murales monumentales s'inscrivent dans une volonté d'offrir aux citoyens un rapport quotidien et non marchand à l'art. L'enjeu des prochaines décennies résidera dans la capacité des artistes à préserver cette spontanéité et cette désobéissance civile qui ont présidé à la naissance du hip-hop.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de Page -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Exposition Virtuelle - Scénographie de l’Espace Public. Tous droits réservés.</p>
+            <p class="footer-sub">Images libres de droits de photographes de la communauté Unsplash. Pas d'IA.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal de la Galerie -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle"></h3>
+                <div class="lightbox-meta">
+                    <span id="lightboxDate"></span> | <span id="lightboxLoc"></span>
+                </div>
+                <p id="lightboxDesc"></p>
+                <div class="lightbox-archive" id="lightboxArchive"></div>
+                <button id="lightboxDownloadBtn" class="btn btn-primary lightbox-download-btn" style="margin-top: 1.5rem; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <svg class="icon-svg" viewBox="0 0 24 24" style="fill: #fff; width: 18px; height: 18px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    Télécharger l'image en Haute Résolution (HD)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

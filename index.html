@@ -178,7 +178,7 @@
                 <div class="card-content">
                     <h3>L'Insurrection par les Signes</h3>
                     <p class="card-text">
-                        Né au début des années 1970 dans le sud du Bronx, le hip-hop émerge de la précarité socio-économique et des rivalités de gangs. Sous l'influence d'Afrika Bambaataa et de la Zulu Nation, l'agressivité de la rue is canalisée vers des joutes artistiques (rap, breakdance, tag).
+                        Né au début des années 1970 dans le sud du Bronx, le hip-hop émerge de la précarité socio-économique et des rivalités de gangs. Sous l'influence d'Afrika Bambaataa et de la Zulu Nation, l'agressivité de la rue est canalisée vers des joutes artistiques (rap, breakdance, tag).
                     </p>
                     <blockquote class="card-quote">
                         « Une insurrection par les signes »
@@ -327,12 +327,24 @@
             <div class="section-line"></div>
         </div>
 
-        <!-- Bouton Télécharger toutes les images -->
-        <div class="gallery-actions" style="margin-bottom: 2rem; display: flex; justify-content: flex-end;">
-            <button id="downloadAllBtn" class="btn btn-secondary" style="display: flex; align-items: center; gap: 8px;">
-                <svg class="icon-svg" viewBox="0 0 24 24" style="fill: var(--accent-neon-pink); width: 18px; height: 18px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-                Télécharger toute l'exposition (Images HD)
-            </button>
+        <!-- Zone de Téléchargement Scénographique -->
+        <div class="exposition-download-zone reveal" style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: 8px; padding: 2.5rem; margin-bottom: 3rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 2rem;">
+            <div style="flex: 1 1 500px;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 0.5rem; color: #fff;">Espace de Téléchargement Muséographique</h3>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0;">
+                    Pour les Centres Sociaux de Bar-le-Duc et les partenaires scénographes, accédez aux fichiers sources de l'exposition. Téléchargez le pack complet ZIP (site, code et images) ou l'ensemble des 15 images HD prêtes pour impression.
+                </p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; flex-shrink: 0;">
+                <a href="culture_urbaine.zip" download="culture_urbaine.zip" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+                    <svg class="icon-svg" viewBox="0 0 24 24" style="fill: #fff; width: 18px; height: 18px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    Télécharger le ZIP Complet
+                </a>
+                <button id="downloadAllBtn" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <svg class="icon-svg" viewBox="0 0 24 24" style="fill: var(--accent-neon-cyan); width: 18px; height: 18px;"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    Télécharger les Images HD (15 fichiers)
+                </button>
+            </div>
         </div>
 
         <!-- Filtres de Galerie -->

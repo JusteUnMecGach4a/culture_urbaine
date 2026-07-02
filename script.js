@@ -254,14 +254,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (downloadAllBtn) {
         downloadAllBtn.addEventListener("click", () => {
             const originalText = downloadAllBtn.innerHTML;
-            downloadAllBtn.innerHTML = `
-                <svg class="icon-svg spinner-icon" viewBox="0 0 24 24" style="fill: #fff; width: 18px; height: 18px; margin-right: 8px; animation: spin-loader 1s linear infinite;"><path d="M12 4V2C6.48 2 2 6.48 2 12h2c0-4.41 3.59-8 8-8zm0 16v2c5.52 0 10-4.48 10-10h-2c0 4.41-3.59 8-8 8z"/></svg>
-                Téléchargement...
-            `;
             downloadAllBtn.disabled = true;
 
             localImagesList.forEach((img, index) => {
                 setTimeout(() => {
+                    // Affichage de la progression en temps réel
+                    downloadAllBtn.innerHTML = `
+                        <svg class="icon-svg spinner-icon" viewBox="0 0 24 24" style="fill: #fff; width: 18px; height: 18px; margin-right: 8px; animation: spin-loader 1s linear infinite;"><path d="M12 4V2C6.48 2 2 6.48 2 12h2c0-4.41 3.59-8 8-8zm0 16v2c5.52 0 10-4.48 10-10h-2c0 4.41-3.59 8-8 8z"/></svg>
+                        Images : ${index + 1} / ${localImagesList.length}
+                    `;
+
                     const a = document.createElement("a");
                     a.href = img.url;
                     a.download = img.name;
@@ -269,10 +271,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     a.click();
                     document.body.removeChild(a);
 
-                    // Quand c'est fini pour la dernière image
+                    // Quand le téléchargement de toutes les images est complété
                     if (index === localImagesList.length - 1) {
-                        downloadAllBtn.innerHTML = originalText;
-                        downloadAllBtn.disabled = false;
+                        setTimeout(() => {
+                            downloadAllBtn.innerHTML = originalText;
+                            downloadAllBtn.disabled = false;
+                        }, 500);
                     }
                 }, index * 250); // Un délai de 250ms empêche le navigateur de bloquer les téléchargements simultanés
             });

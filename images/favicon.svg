@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff007f" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+  </defs>
+  <!-- Cap & Nozzle -->
+  <path d="M14 6h4v2h-4zM13 8h6v2h-6z" fill="#00f3ff" />
+  <path d="M19 9h2v1h-2z" fill="#ff007f" />
+  <!-- Body -->
+  <rect x="9" y="10" width="14" height="16" rx="2" fill="url(#neonGrad)" />
+  <!-- Paint drips/decorations on the can -->
+  <circle cx="13" cy="14" r="2" fill="#07070c" opacity="0.4" />
+  <circle cx="19" cy="18" r="1.5" fill="#07070c" opacity="0.4" />
+  <!-- Spray effect -->
+  <circle cx="23" cy="5" r="1.5" fill="#ff007f" />
+  <circle cx="26" cy="4" r="2" fill="#ff007f" opacity="0.8" />
+  <circle cx="29" cy="3" r="2.5" fill="#00f3ff" opacity="0.6" />
+</svg>
